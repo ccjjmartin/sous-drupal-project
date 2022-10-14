@@ -1,0 +1,5 @@
+name: admin
+type: theme
+description: Theme using Storybook and component-driven development
+base theme: gin
+core_version_requirement: ^8 || ^9
