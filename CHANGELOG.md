@@ -1,50 +1,34 @@
-# Changelog
-
-All notable changes specific to pantheon-upstreams/drupal-composer-managed are noted here.
+## [4.1.3](https://github.com/fourkitchens/sous-drupal-project/compare/4.1.2...4.1.3) (2022-08-24)
 
 
-## Pantheon Update #3 - 2022-03-23
+### Bug Fixes
 
-### Changed
+* adds oomphinc to allow-plugins ([d5af40a](https://github.com/fourkitchens/sous-drupal-project/commit/d5af40a072a541412bf68f6ae99cf48333b7c707))
+* syntax error ([5783323](https://github.com/fourkitchens/sous-drupal-project/commit/5783323738ed8eb30433f5431b23f3e98a955508))
 
-- Renamed repository from pantheon-upstreams/drupal-recommended to pantheon-upstreams/drupal-composer-managed
-- Switched the default branch from 'master' to 'main'
-
-### Added
-
-- Created a Composer pre-update script to ensure that the version of the upstream-configuration path repository is always 'dev-main', regardless of what branch / multidev the "composer update" command was run on.
-- Added a new command, "composer upstream-require", for adding dependencies to the upstream-configuration path repository in custom upstreams.
+## [4.1.2](https://github.com/fourkitchens/sous-drupal-project/compare/4.1.1...4.1.2) (2022-08-23)
 
 
-## Pantheon Update #2 - 2021-11-01
+### Bug Fixes
 
-### Changed
+* remove change that is in a different PR ([5d5f3cc](https://github.com/fourkitchens/sous-drupal-project/commit/5d5f3ccc57e05308fa11d5f15935975b67caa83f))
+* removed drupal console ([ff52a72](https://github.com/fourkitchens/sous-drupal-project/commit/ff52a725b49ca193fe714f537ad541c5ae19ad87))
 
-- Renamed repository from pantheon-upstreams/drupal-project to pantheon-upstreams/drupal-recommended.
-- Update .gitignore to make it easier to manage changes to the Drupal core scaffold files.
-- Move most dependencies out of `upstream-configuration` to give more control to individual sites.
-- Install contrib modules to `web/modules/contrib` rather than `web/modules/composer`.
+## [4.1.1](https://github.com/fourkitchens/sous-drupal-project/compare/4.1.0...4.1.1) (2022-05-03)
 
 
-## Pantheon Update #1 - 2021-02-03
+### Bug Fixes
 
-### Added
+* **docs:** add semantic release angular badge to readme ([5be1e76](https://github.com/fourkitchens/sous-drupal-project/commit/5be1e762d8adabb9dad9b5d013afb1b2665508ab))
 
-- Add changelog to track Pantheon-specific changes to pantheon-upstreams/pantheon-project. (#10)
-- Two repositories for release management. Pull requests accepted at https://github.com/pantheon-systems/drupal-project and releases located at https://github.com/pantheon-upstreams/drupal-project. (#4,#5)
-
+# [4.1.0](https://github.com/fourkitchens/sous-drupal-project/compare/4.0.1...4.1.0) (2022-03-22)
 
 
-### Changed
+### Bug Fixes
 
-- Allow site-level customization of Drush version. (#5)
-- Allow sites to downgrade to Drupal 8.8.  (#6)
-- Use optimized autoloader in Test and Live, but not Dev or Multidev (#8)
+* **ci:** fix beta branch ci setup ([965d640](https://github.com/fourkitchens/sous-drupal-project/commit/965d640ecd0bb170a038d620b83f81b8a098c6f7))
 
 
+### Features
 
-### Removed
-
-- Remove install check and MariaDB minimum version patches. (#3)
-
-[The associated milestone in GitHub](https://github.com/pantheon-systems/drupal-project/milestone/1?closed=1) provides detailed information about all changes in this update.
+* **changelog:** add changelog feature ([67929f3](https://github.com/fourkitchens/sous-drupal-project/commit/67929f363942de56cd5b1a8b36d40dc09fbb823f))
